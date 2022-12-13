@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "nikiabedzade@gmail.com",
+      "password": "123456niki",
+      "id": 1
+    },
+    {
+      "email": "k.a76.abedzade@gmail.com",
+      "password": "12345m",
+      "id": 2
+    },
+    {
+      "email": "k.a76.abedzade@gmail.com",
+      "password": "123456nik",
+      "id": 3
+    }
+  ]
+}
