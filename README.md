@@ -1,3 +1,5 @@
+![my-image](React%20Music%20Web%20App.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
