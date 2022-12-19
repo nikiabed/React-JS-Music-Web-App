@@ -8,6 +8,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install`
+Install node modules to run the App
+
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -15,6 +18,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
+
+To Run the SERVER just use this code on the terminal:
+### `json-server --watch db.json --port 8000`
+You can not log in if you are not connected to the json server.
+please log in with the Email and Passwords available on db.json or you can use sign up option
+it's just a Demo
+
 
 ### `npm test`
 
