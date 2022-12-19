@@ -100,11 +100,11 @@ function Dashboard() {
       setFill4,
       setNoFill4,
     ],
-    iran: [
-      require("../assest/iraneMan.mp3"),
+    so: [
+      require("../assest/so.mp3"),
       require("../assest/5.jpg"),
-      "Irane Man",
-      "King Raam",
+      "So What",
+      "Pink",
       fill5,
       nofill5,
       setFill5,
@@ -131,10 +131,10 @@ function Dashboard() {
       setNoFill7,
     ],
     baraye: [
-      require("../assest/baraye.mp3"),
+      require("../assest/calm.mp3"),
       require("../assest/8.jpg"),
-      "Baraye",
-      "Shervin",
+      "Calm Down",
+      "Rema",
       fill8,
       nofill8,
       setFill8,
@@ -419,7 +419,7 @@ function Dashboard() {
           <a href="#" onClick={handleClick}>
             <div className="img5 contain">
               <figure className="fig1">
-                <img src={link.iran[1]} className="img iran" />
+                <img src={link.so[1]} className="img so" />
                 <IconContext.Provider
                   value={{ className: `heart1 heart1-${nofill5}` }}
                 >
@@ -427,7 +427,7 @@ function Dashboard() {
                     onClick={() => {
                       setFill5(true);
                       setNoFill5(false);
-                      setLiked((p) => [...p, "iran"]);
+                      setLiked((p) => [...p, "so"]);
                     }}
                   />
                 </IconContext.Provider>
@@ -438,13 +438,13 @@ function Dashboard() {
                     onClick={() => {
                       setFill5(false);
                       setNoFill5(true);
-                      setLiked((c) => c.filter((i) => i !== "iran"));
+                      setLiked((c) => c.filter((i) => i !== "so"));
                     }}
                   />
                 </IconContext.Provider>
               </figure>
-              <figcaption className="figCapName">{link.iran[2]}</figcaption>
-              <figcaption className="figCapArtist">{link.iran[3]}</figcaption>
+              <figcaption className="figCapName">{link.so[2]}</figcaption>
+              <figcaption className="figCapArtist">{link.so[3]}</figcaption>
             </div>
           </a>
         </div>
@@ -515,7 +515,7 @@ function Dashboard() {
           <a href="#" onClick={handleClick}>
             <div className="img8 contain">
               <figure className="fig1">
-                <img src={link.baraye[1]} className="img baraye" />
+                <img src={link.calm[1]} className="img calm" />
                 <IconContext.Provider
                   value={{ className: `heart1 heart1-${nofill8}` }}
                 >
@@ -523,7 +523,7 @@ function Dashboard() {
                     onClick={() => {
                       setFill8(true);
                       setNoFill8(false);
-                      setLiked((p) => [...p, "baraye"]);
+                      setLiked((p) => [...p, "calm"]);
                     }}
                   />
                 </IconContext.Provider>
@@ -534,13 +534,13 @@ function Dashboard() {
                     onClick={() => {
                       setFill8(false);
                       setNoFill8(true);
-                      setLiked((c) => c.filter((i) => i !== "baraye"));
+                      setLiked((c) => c.filter((i) => i !== "calm"));
                     }}
                   />
                 </IconContext.Provider>
               </figure>
-              <figcaption className="figCapName">{link.baraye[2]}</figcaption>
-              <figcaption className="figCapArtist">{link.baraye[3]}</figcaption>
+              <figcaption className="figCapName">{link.calm[2]}</figcaption>
+              <figcaption className="figCapArtist">{link.calm[3]}</figcaption>
             </div>
           </a>
           <a href="#" onClick={handleClick}>

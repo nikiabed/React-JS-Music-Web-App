@@ -11,19 +11,17 @@ function Home() {
     hello: require("../assest/hello.mp3"),
     up: require("../assest/up&up.mp3"),
     lose: require("../assest/loseYouToLoveMe.mp3"),
-    iran: require("../assest/iraneMan.mp3"),
+    so: require("../assest/so.mp3"),
     roar: require("../assest/roar.mp3"),
     stay: require("../assest/stay.mp3"),
-    baraye: require("../assest/baraye.mp3"),
+    calm: require("../assest/calm.mp3"),
     tehran: require("../assest/tehran.mp3"),
     levitating: require("../assest/levitating.mp3"),
   });
 
   const handleClick = (e) => {
-    console.log(e.target.className);
     const name = e.target.className;
     const nameClass = name.slice(4, name.length);
-    console.log(link[nameClass]);
     setSong(link[nameClass]);
   };
 
@@ -126,10 +124,10 @@ function Home() {
           <a href="#" onClick={handleClick}>
             <div className="img5 contain">
               <figure className="fig1">
-                <img src={require("../assest/5.jpg")} className="img iran" />
+                <img src={require("../assest/5.jpg")} className="img so" />
               </figure>
-              <figcaption className="figCapName">Irane Man</figcaption>
-              <figcaption className="figCapArtist">King Raam</figcaption>
+              <figcaption className="figCapName">So What</figcaption>
+              <figcaption className="figCapArtist">Pink</figcaption>
             </div>
           </a>
         </div>
@@ -156,10 +154,10 @@ function Home() {
           <a href="#" onClick={handleClick}>
             <div className="img8 contain">
               <figure className="fig1">
-                <img src={require("../assest/8.jpg")} className="img baraye" />
+                <img src={require("../assest/8.jpg")} className="img calm" />
               </figure>
-              <figcaption className="figCapName">Baraye</figcaption>
-              <figcaption className="figCapArtist">Shervin</figcaption>
+              <figcaption className="figCapName">Calm Down</figcaption>
+              <figcaption className="figCapArtist">Rema</figcaption>
             </div>
           </a>
           <a href="#" onClick={handleClick}>
