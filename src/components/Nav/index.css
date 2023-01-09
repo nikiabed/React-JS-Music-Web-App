@@ -1,0 +1,31 @@
+.nav-link {
+  text-decoration: none;
+  color: blueviolet !important;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #fe3f88 !important;
+}
+.nav {
+  padding: 5px;
+  text-align: left;
+  color: #ff2679;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: rgb(36, 36, 36);
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-header {
+  flex: 1 1 auto;
+  padding: 0 15px;
+  margin: 0;
+}

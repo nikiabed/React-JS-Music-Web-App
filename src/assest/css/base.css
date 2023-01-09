@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+body,
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  position: relative;
+}
+
+.main {
+  width: 75vw;
+  position: absolute;
+  top: 0;
+  left: 25vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: rgb(27, 27, 27);
+  padding-bottom: 300px;
+  color: rgb(212, 212, 212);
+}
+
+.main-header,
+.main-header2,
+.main-header3,
+.main-header4,
+.main-header5 {
+  padding: 0;
+  text-align: center;
+}
+.main a {
+  color: rgb(213, 213, 213);
+  text-decoration: none;
+}
+
+.main a:hover {
+  color: rgb(246, 246, 246);
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    display: block;
+    position: relative;
+    margin: 0;
+  }
+
+  .main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 200px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .footer {
+    height: 5%;
+  }
+}
+.main-header {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: max-content;
+  overflow: auto;
+  height: 8vh;
+  background-color: rgb(198, 0, 96);
+}
+
+.footer audio {
+  width: 100vw;
+}
+
+.footer-dash {
+  background-color: rgb(198, 0, 96);
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer-dash audio {
+  width: 50vw;
+  flex: 3;
+}

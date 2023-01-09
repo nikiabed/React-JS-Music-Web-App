@@ -4,7 +4,7 @@ import { IoHeart, IoHeartOutline } from "react-icons/io5";
 import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 import { BsPenFill } from "react-icons/bs";
-import Song from "./Song";
+import Song from "../components/Song";
 
 function Dashboard() {
   const [isOpenR, setOpenR] = useState(false);
@@ -61,8 +61,8 @@ function Dashboard() {
 
   const [link, setLink] = useState({
     bad: [
-      require("../assest/badBlood.mp3"),
-      require("../assest/1.jpg"),
+      require("../assest/audio/badBlood.mp3"),
+      require("../assest/img/1.jpg"),
       "Bad Blood",
       "Taylor Swift",
       fill1,
@@ -71,8 +71,8 @@ function Dashboard() {
       setNoFill1,
     ],
     hello: [
-      require("../assest/hello.mp3"),
-      require("../assest/2.jpg"),
+      require("../assest/audio/hello.mp3"),
+      require("../assest/img/2.jpg"),
       "Hello",
       "Adel",
       fill2,
@@ -81,8 +81,8 @@ function Dashboard() {
       setNoFill2,
     ],
     up: [
-      require("../assest/up&up.mp3"),
-      require("../assest/3.jpg"),
+      require("../assest/audio/up&up.mp3"),
+      require("../assest/img/3.jpg"),
       "Up & Up",
       "Coldplay",
       fill3,
@@ -91,8 +91,8 @@ function Dashboard() {
       setNoFill3,
     ],
     lose: [
-      require("../assest/loseYouToLoveMe.mp3"),
-      require("../assest/4.jpg"),
+      require("../assest/audio/loseYouToLoveMe.mp3"),
+      require("../assest/img/4.jpg"),
       "Lose You To Love Me",
       "Selena Gomez",
       fill4,
@@ -101,8 +101,8 @@ function Dashboard() {
       setNoFill4,
     ],
     so: [
-      require("../assest/so.mp3"),
-      require("../assest/5.jpg"),
+      require("../assest/audio/so.mp3"),
+      require("../assest/img/5.jpg"),
       "So What",
       "Pink",
       fill5,
@@ -111,8 +111,8 @@ function Dashboard() {
       setNoFill5,
     ],
     roar: [
-      require("../assest/roar.mp3"),
-      require("../assest/6.jpg"),
+      require("../assest/audio/roar.mp3"),
+      require("../assest/img/6.jpg"),
       "Roar",
       "Katty Perry",
       fill6,
@@ -121,8 +121,8 @@ function Dashboard() {
       setNoFill6,
     ],
     stay: [
-      require("../assest/stay.mp3"),
-      require("../assest/7.jpg"),
+      require("../assest/audio/stay.mp3"),
+      require("../assest/img/7.jpg"),
       "Stay",
       "Justin bieber",
       fill7,
@@ -131,8 +131,8 @@ function Dashboard() {
       setNoFill7,
     ],
     baraye: [
-      require("../assest/calm.mp3"),
-      require("../assest/8.jpg"),
+      require("../assest/audio/calm.mp3"),
+      require("../assest/img/8.jpg"),
       "Calm Down",
       "Rema",
       fill8,
@@ -141,8 +141,8 @@ function Dashboard() {
       setNoFill8,
     ],
     tehran: [
-      require("../assest/tehran.mp3"),
-      require("../assest/9.jpg"),
+      require("../assest/audio/tehran.mp3"),
+      require("../assest/img/9.jpg"),
       "Tehran",
       "Sogand",
       fill9,
@@ -151,8 +151,8 @@ function Dashboard() {
       setNoFill9,
     ],
     levitating: [
-      require("../assest/levitating.mp3"),
-      require("../assest/10.jpg"),
+      require("../assest/audio/levitating.mp3"),
+      require("../assest/img/10.jpg"),
       "Levitating",
       "Dua Lipa",
       fill10,
@@ -193,7 +193,7 @@ function Dashboard() {
               </label>
               {!upimage && (
                 <img
-                  src={require("../assest/dash.png")}
+                  src={require("../assest/img/dash.png")}
                   className="pro-image"
                 />
               )}
@@ -267,24 +267,24 @@ function Dashboard() {
         <div className="title">
           <div className="main-header gnr">
             <h3 className="listen">Rock</h3>{" "}
-            <img src={require("../assest/14.jpg")} className="genre" />
+            <img src={require("../assest/img/14.jpg")} className="genre" />
           </div>
           <div className="main-header2 gnr">
             <h3 className="listen">Chill Mood</h3>
-            <img src={require("../assest/12.jpg")} className="genre" />
+            <img src={require("../assest/img/12.jpg")} className="genre" />
           </div>
           <div className="main-header3 gnr">
             <h3 className="listen">Weekends</h3>
-            <img src={require("../assest/13.jpg")} className="genre" />
+            <img src={require("../assest/img/13.jpg")} className="genre" />
           </div>
           <div className="main-header4 gnr">
             <h3 className="listen">Happy Pop</h3>
-            <img src={require("../assest/11.jpg")} className="genre" />
+            <img src={require("../assest/img/11.jpg")} className="genre" />
           </div>
           <div className="main-header5 gnr">
             <h3 className="listen">Focus</h3>
             <Link to={"/focus"}>
-              <img src={require("../assest/15.jpg")} className="genre" />
+              <img src={require("../assest/img/15.jpg")} className="genre" />
             </Link>
           </div>
         </div>

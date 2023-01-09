@@ -1,0 +1,272 @@
+@import url("./base.css");
+@import url("./form/index.css");
+@import url("../../components/Modal/index.css");
+@import url("../../components/Nav/index.css");
+@import url("../../components/Sidebar/index.css");
+@import url("../../components/Signup/index.css");
+@import url("../../components/Song/index.css");
+
+.border {
+  background-color: rgb(23, 23, 23);
+}
+
+.playlist-btn {
+  background: none;
+  border: none;
+  color: rgb(216, 186, 245);
+}
+
+.hambur-wrapper {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.hambur-wrapper:hover {
+  color: #ff2679;
+  cursor: pointer;
+}
+
+.liked {
+  grid-template-areas: "h h h l";
+}
+.hambur-liked {
+  grid-area: h;
+}
+
+.liked-icon {
+  grid-area: l;
+}
+
+.react-icons {
+  margin-left: 40px;
+  font-size: 20px;
+  justify-self: center;
+  grid-area: l;
+  color: blueviolet;
+  align-items: center;
+}
+
+.title {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.music1 {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.music2 {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel,
+audio::-webkit-media-controls-enclosure {
+  background-color: rgb(198, 0, 96);
+  border-radius: 0%;
+}
+
+.img {
+  padding: 20px 40px 2px 40px;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.contain {
+  background-color: rgb(27, 27, 27);
+  text-align: center;
+  margin-top: 10px;
+  padding-block: 0.5rem;
+  box-shadow: 2px 2px 2px 1px rgba(19, 19, 19, 0.8);
+}
+
+.genre {
+  padding: 15px;
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  background-color: rgb(26, 26, 26);
+}
+
+.genre:hover {
+  background-color: rgb(42, 42, 42);
+  box-shadow: 1px 1px 1px 1px rgb(20, 20, 20, 0.9);
+  cursor: pointer;
+}
+
+.listen {
+  margin: 0;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.fig1 {
+  margin: 0;
+}
+
+.figCapName {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.figCapArtist {
+  font-size: 10px;
+  color: rgb(144, 144, 144);
+}
+
+.contain:hover {
+  background-color: rgb(32, 32, 32);
+}
+
+.ham {
+  flex: 2 1 auto;
+  margin: 0;
+  display: grid;
+  text-align: right;
+}
+
+.login-hdr {
+  margin: 20px;
+  text-align: center;
+}
+
+.close-btn {
+  height: fit-content;
+  border: none;
+  background-color: white;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.user,
+.pass {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#user-input,
+#pass-input {
+  flex: 1;
+  padding: 8px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.user label,
+.pass label {
+  flex: 1;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.forgetPass {
+  text-align: right;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.log {
+  font-size: 20px;
+}
+
+.profile-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.image-card {
+  height: 100px;
+  width: 100px;
+  box-shadow: 2px 1px 2px 1px rgba(18, 18, 18, 0.89);
+  display: block;
+  cursor: pointer;
+  border-radius: 5rem;
+  position: relative;
+  margin: auto;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.pen {
+  flex: 1;
+}
+
+.pro-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5rem;
+}
+
+.pro-image[src*="http"] {
+  display: block;
+}
+
+.heart {
+  margin: auto auto;
+  color: #1c1c1c;
+  font-size: 19px;
+  flex: 1;
+}
+
+.heart:hover {
+  cursor: pointer;
+  border-radius: 5rem;
+}
+
+.fill {
+  color: #f4347e;
+}
+
+.heart-false {
+  display: none;
+}
+.heart-true {
+  display: inline-block;
+}
+
+.heart1-false {
+  display: none;
+}
+.heart1-true {
+  display: block;
+  margin: auto auto;
+  margin-bottom: 2px;
+}
+
+.items {
+  color: white;
+  text-align: center;
+  background-color: #d5155f;
+  margin: 5px;
+  padding: 10px !important;
+}
+
+.items:hover {
+  cursor: pointer;
+}
