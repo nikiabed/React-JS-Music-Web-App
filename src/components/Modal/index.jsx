@@ -1,10 +1,10 @@
 import React from "react";
-import { useModal } from "../contexts/Modal";
+import axios from "axios";
+import { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { useAuth } from "../contexts/Auth";
-import axios from "axios";
+import { useModal } from "../../contexts/Modal";
+import { useAuth } from "../../contexts/Auth";
 
 function Modal({ modalIsOpen }) {
   const navigate = useNavigate();

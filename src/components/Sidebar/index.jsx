@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Hamburger from "hamburger-react";
-import { IoHeart } from "react-icons/io5";
 import { IconContext } from "react-icons";
-import { useModal } from "../contexts/Modal";
+import { IoHeart } from "react-icons/io5";
+import Hamburger from "hamburger-react";
+import { useModal } from "../../contexts/Modal";
 
-function Sidebar() {
+export default function Sidebar() {
   const [isOpenR, setOpenR] = useState(false);
 
   const { modalIsOpen, setModalOpen } = useModal();
@@ -53,5 +53,3 @@ function Sidebar() {
     </>
   );
 }
-
-export default Sidebar;

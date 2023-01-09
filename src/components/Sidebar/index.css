@@ -1,0 +1,68 @@
+.sidebar {
+  width: 25vw;
+  flex: 2;
+  background-color: rgb(16, 16, 16) !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar-header {
+  margin: 15px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(28, 28, 28);
+  border-radius: 1.5%;
+  height: auto;
+  color: white;
+}
+
+.sidebar-h1 {
+  margin: 0;
+  color: #ff2679;
+  padding: 10px;
+}
+
+.sidebar-but {
+  background-color: rgb(95, 28, 158);
+  border: none;
+  border-radius: 2%;
+  padding: 4px 10px;
+  color: white;
+}
+
+.sidebar-but:hover {
+  background-color: #ff3482;
+  cursor: pointer;
+}
+.sidebar-p {
+  font-size: 13px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.sidebar-a {
+  color: blueviolet;
+  font-size: 13px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.sidebar-a:hover {
+  color: #ff2679;
+}
+
+.sidebar-playlist {
+  margin: 15px;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  border-radius: 2%;
+  height: auto;
+  text-align: left;
+}
+
+.sidebar-playlist li {
+  padding: 20px;
+  list-style: none;
+}

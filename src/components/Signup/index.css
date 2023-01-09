@@ -9,7 +9,7 @@
 }
 
 h1 {
-  text-align: center
+  text-align: center;
 }
 
 .inp {
@@ -27,7 +27,7 @@ h1 {
 .label {
   font-weight: bold;
   display: block;
- margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .btn {

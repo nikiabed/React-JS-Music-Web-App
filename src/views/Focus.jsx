@@ -1,10 +1,13 @@
 import React from "react";
 import { IoHeart } from "react-icons/io5";
 import { IconContext } from "react-icons";
+import { useMemo } from "react";
 
 function Focus() {
-  const img = localStorage.getItem("img");
-
+  const img = useMemo(
+    () => localStorage.getItem("img"),
+    [localStorage.getItem("img")]
+  );
   return (
     <>
       <div>hi</div>
