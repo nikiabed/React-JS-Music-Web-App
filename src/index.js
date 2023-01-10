@@ -4,7 +4,7 @@ import { router } from "./routes";
 import { RouterProvider } from "react-router-dom";
 import { ModalProvider } from "./contexts/Modal";
 import { AuthProvider } from "./contexts/Auth";
-import "./assest/css/index.css";
+import "./assest/Styles/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
