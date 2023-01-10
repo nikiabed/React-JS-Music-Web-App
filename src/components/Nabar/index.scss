@@ -1,0 +1,30 @@
+.navbar {
+  padding: 0;
+  text-align: center;
+  &__item__image {
+    padding: 1rem;
+    margin: 0.5rem;
+    max-width: 5rem;
+    aspect-ratio: 1;
+    max-height: 5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: rgb(42, 42, 42);
+      box-shadow: 1px 1px 1px 1px rgb(20, 20, 20, 0.9);
+      transform: scale(1.1) translateY(-0.5rem);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: stretch;
+    gap: 1rem;
+    padding-left: 1.2rem;
+  }
+  &__title {
+    margin-block: 1rem;
+  }
+}

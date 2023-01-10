@@ -1,0 +1,40 @@
+.track {
+  cursor: pointer;
+  margin: 0.2rem;
+  &__fig__image {
+    margin: 0;
+  }
+  &__image {
+    padding: 1rem 2rem;
+    max-width: 7rem;
+    border-radius: 0.5rem;
+    max-width: 7rem;
+    aspect-ratio: 1;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-inline: 1.5rem;
+  }
+  &__container:hover {
+    background-color: rgb(32, 32, 32);
+    transform: scale(1.1) translateY(-0.5rem);
+  }
+  &__container {
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+    margin-top: 0.6rem;
+    padding-block: 0.5rem;
+    box-shadow: 2px 2px 2px 1px rgba(19, 19, 19, 0.8);
+  }
+  &__singer {
+    font-size: 0.5rem;
+    color: rgb(144, 144, 144);
+  }
+  &__title {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

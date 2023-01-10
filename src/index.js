@@ -7,6 +7,7 @@ import { AuthProvider } from "./contexts/Auth";
 import "./assest/Styles/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <ModalProvider>

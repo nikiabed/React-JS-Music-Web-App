@@ -1,15 +1,5 @@
-import { useModal } from "./contexts/Modal";
-import Modal from "./components/Modal";
+import { Outlet } from "react-router-dom";
 
-function App() {
-  const { modalIsOpen, setModalOpen } = useModal();
-  return (
-    <>
-      <div className="wrapper">
-        {modalIsOpen && <Modal modalIsOpen={modalIsOpen} />}
-      </div>
-    </>
-  );
+export default function App() {
+  return <Outlet />;
 }
-
-export default App;
