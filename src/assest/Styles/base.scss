@@ -14,41 +14,16 @@ code {
 body,
 html {
   margin: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-  position: relative;
 }
 
 .main {
   width: 75vw;
-  position: absolute;
-  top: 0;
-  left: 25vw;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  min-height: 100vh;
   background-color: rgb(27, 27, 27);
-  padding-bottom: 300px;
   color: rgb(212, 212, 212);
 }
 
-.main-header,
-.main-header2,
-.main-header3,
-.main-header4,
-.main-header5 {
-  padding: 0;
-  text-align: center;
-}
+
 .main a {
   color: rgb(213, 213, 213);
   text-decoration: none;

@@ -105,7 +105,7 @@ function Modal({ modalIsOpen }) {
                 </button>
                 <p className="sidebar-p">
                   Don't have an account? &lrm;
-                  <NavLink to="/signup" className="nav-link">
+                  <NavLink to="/signup" className="nav__link">
                     Sign Up
                   </NavLink>
                 </p>
