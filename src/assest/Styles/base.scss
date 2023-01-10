@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,400;1,500&display=swap');
+$footer-font : 'Roboto Condensed', serif;
+$body-font: 'Open sans';
+$header-font: 'Lato';
+$pink-color: #ff2679;
+$purple-color: rgb(95, 28, 158);
+$background-color: rgb(27, 27, 27);
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: $header-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 body,
 html {
   margin: 0;
@@ -33,21 +35,16 @@ html {
   top: 0;
   left: 25vw;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
   background-color: rgb(27, 27, 27);
   padding-bottom: 300px;
   color: rgb(212, 212, 212);
 }
 
-.main-header,
-.main-header2,
-.main-header3,
-.main-header4,
-.main-header5 {
+.main-header {
   padding: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
 .main a {
   color: rgb(213, 213, 213);

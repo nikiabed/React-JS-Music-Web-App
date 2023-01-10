@@ -19,6 +19,12 @@ function Home() {
     levitating: require("../assest/audio/levitating.mp3"),
   });
 
+  const [gnrArr, setArr] = useState(['rock', 'party', 'chill', 'focus', 'happy'])
+  const [genre, setGenre] = useState({
+    rock: require('../assest/img/rock.jpg'),
+    // chill: require('')
+  })
+
   const handleClick = (e) => {
     const name = e.target.className;
     const nameClass = name.slice(4, name.length);
@@ -37,48 +43,23 @@ function Home() {
       {modalIsOpen && <Modal modalIsOpen={modalIsOpen} />}
       <main className="main border">
         <div className="title">
-          <div className="main-header gnr">
-            <h3 className="listen">Rock</h3>{" "}
-            <img
-              src={require("../assest/img/14.jpg")}
+            {gnrArr.map((el)=>{
+              return(
+                <>
+                <div>
+                  <h3>{el.charAt(0).toUpperCase()+ el.slice(1)}</h3>
+                  <img
+              src={require(`../assest/img/${el}.jpg`)}
               className="genre"
               onClick={handleGenre}
             />
+                </div>
+                </>
+              ) 
+            })}
+           
           </div>
-          <div className="main-header2 gnr">
-            <h3 className="listen">Chill Mood</h3>
-            <img
-              src={require("../assest/img/12.jpg")}
-              className="genre"
-              onClick={handleGenre}
-            />
-          </div>
-          <div className="main-header3 gnr">
-            <h3 className="listen">Weekends</h3>
-            <img
-              src={require("../assest/img/13.jpg")}
-              className="genre"
-              onClick={handleGenre}
-            />
-          </div>
-          <div className="main-header4 gnr">
-            <h3 className="listen">Happy Pop</h3>
-            <img
-              src={require("../assest/img/11.jpg")}
-              className="genre"
-              onClick={handleGenre}
-            />
-          </div>
-          <div className="main-header5 gnr">
-            <h3 className="listen">Focus</h3>
-            <img
-              src={require("../assest/img/15.jpg")}
-              className="genre"
-              onClick={handleGenre}
-            />
-          </div>
-        </div>
-
+          
         {/* MUSIC IMAGES */}
         <div className="music1">
           <a href="#" onClick={handleClick}>

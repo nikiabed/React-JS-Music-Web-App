@@ -269,7 +269,7 @@ function Dashboard() {
             <h3 className="listen">Rock</h3>{" "}
             <img src={require("../assest/img/14.jpg")} className="genre" />
           </div>
-          <div className="main-header2 gnr">
+          {/* <div className="main-header2 gnr">
             <h3 className="listen">Chill Mood</h3>
             <img src={require("../assest/img/12.jpg")} className="genre" />
           </div>
@@ -286,7 +286,7 @@ function Dashboard() {
             <Link to={"/focus"}>
               <img src={require("../assest/img/15.jpg")} className="genre" />
             </Link>
-          </div>
+          </div> */}
         </div>
 
         {/* MUSIC IMAGES */}
